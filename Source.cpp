@@ -4,6 +4,7 @@
 
 #include <windows.h>
 #include <wlanapi.h>
+#include "resource.h"
 
 TCHAR szClassName[] = TEXT("Window");
 
@@ -97,7 +98,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPreInst, LPSTR pCmdLine, int 
 		0,
 		0,
 		hInstance,
-		0,
+		LoadIcon(hInstance, MAKEINTRESOURCE(IDI_ICON1)),
 		LoadCursor(0,IDC_ARROW),
 		(HBRUSH)(COLOR_WINDOW + 1),
 		0,
