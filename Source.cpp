@@ -74,7 +74,6 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 						pIfList = NULL;
 					}
 				}
-
 				WlanCloseHandle(hClient, NULL);
 			}
 		}
